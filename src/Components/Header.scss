@@ -1,0 +1,94 @@
+@import "../Styles/Mixins.scss";
+
+.main-header {
+  background-color: $base-color;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  color: $base-text;
+
+  .background-image {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Sets the width of the image to 100% of the div */
+    height: 100%; /* Sets the height of the image to 100% of the div */
+    // z-index: -1; /* Positions the image behind the other content */
+
+    & > img {
+      display: block;
+      width: 100%; /* Sets the width of the image to 100% of the div */
+      height: auto;
+    }
+  }
+  .dates-and-gifts-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .header-date-close {
+      display: none;
+      @include breakpoint(md) {
+        position: absolute;
+        background-color: $base-color;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+        padding: 0.25rem;
+        display: flex;
+        justify-content: center;
+
+        & > img {
+          width: 20px;
+          height: 20px;
+          filter: invert(100%);
+        }
+      }
+    }
+
+    .header-dates {
+      display: flex;
+      margin: 0 0 0.75rem 0;
+      color: $base-text-t;
+      & > div {
+        background-color: $base-color;
+      }
+
+      .header-dates-slots {
+        background-color: $base-gray;
+        padding: 0.2rem 0.5rem;
+        border-radius: 15px;
+        font-size: $base-font-size-xs;
+      }
+
+      & > span {
+        font-size: $base-font-size-s;
+        padding: 0.1rem 0.5rem;
+      }
+
+      @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1rem;
+        background-color: $base-color;
+        border-radius: 35px;
+        padding: 0.25rem;
+      }
+    }
+    .header-travel-gifts {
+      & > div {
+        font-size: $base-font-size-m;
+        font-weight: bold;
+        padding-bottom: 0.75rem;
+      }
+
+      & > span {
+        font-size: $base-font-size-s;
+        color: $base-text-t;
+      }
+    }
+  }
+}

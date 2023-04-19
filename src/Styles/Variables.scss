@@ -1,0 +1,37 @@
+$base-color: #1a1a1a;
+$base-gray: #2c3234;
+$base-orange: #f05b25;
+$base-text: #e7f0f3;
+$base-text-t: rgba(255, 255, 255, 0.7);
+$base-font-size-xs: 12px;
+$base-font-size-s: 14px;
+$base-font-size-m: 16px;
+
+
+
+$breakpoints: (
+  xsm: (
+    min: 375px,
+    max: 374.98px,
+  ),
+  sm: (
+    min: 576px,
+    max: 575.98px,
+  ),
+  md: (
+    min: 940px,
+    max: 939.98px,
+  ),
+  lg: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  xl: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xxl: (
+    min: 1400px,
+    max: 1399.98px,
+  ),
+);
