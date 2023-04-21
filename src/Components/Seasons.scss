@@ -1,1 +1,69 @@
 @import "../Styles/Mixins.scss";
+
+.season-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: $base-color;
+
+  .seasons {
+    display: flex;
+    // padding: 2rem 4rem;
+
+    .cash-left {
+      border-radius: 8px 0 0 8px;
+    }
+
+    .final-right {
+      border-radius: 0 8px 8px 0;
+    }
+
+    .choosen-season {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      background-color: $base-orange;
+      color: white;
+      padding: 1.2rem 0.1rem;
+
+      flex: 32;
+      transform: scale(1.2);
+      @include breakpoint(sm){
+        transform: scale(1.05);
+      }
+
+      .season-date {
+        font-size: $base-font-size-xs;
+        text-align: center;
+      }
+
+      .season-stages {
+        font-size: $base-font-size-s;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+    .season-choose {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $base-gray;
+      color: white;
+      flex: 30;
+
+      .season-date {
+        font-size: $base-font-size-xxxs;
+        text-align: center;
+      }
+
+      .season-stages {
+        font-size: $base-font-size-xs;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}

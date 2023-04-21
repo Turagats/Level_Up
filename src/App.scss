@@ -1,4 +1,23 @@
+@import "./Styles/Mixins.scss";
+
 .main-pop-container {
-    background-color: rgb(24, 64, 100);
-  }
+  background-color: $base-color;
   
+  .footer {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid $base-orange;
+    background-color: $base-color;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 0.5rem;
+
+    .footer-text {
+      border-radius: 5px;
+      background-color: $base-orange;
+      color: $base-text;
+      padding:0.2rem 0.5rem;
+    }
+  }
+}

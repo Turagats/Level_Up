@@ -1,0 +1,75 @@
+@import "../../Styles/Mixins.scss";
+
+.cash-main-container {
+  @include center-content();
+  flex-direction: column;
+  border-radius: 16px;
+  color: aliceblue;
+
+  .cash-section-leaderboard-container {
+    width: 100%;
+    border-radius: 12px;
+    background-color: $base-gray;
+
+    .cash-section-leaderboard-header-title {
+      display: flex;
+      justify-content: center;
+    }
+    .cash-section-leaderboard {
+      display: flex;
+      flex-direction: column;
+
+      .cash-section-leaderboard-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cash-section-gift {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .cash-section-lists {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        .cash-section-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: $base-color;
+          border-radius: 76px;
+          border: 2px solid grey;
+          margin: 0.2rem;
+
+          .cash-list-logo {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .cash-prize-section {
+    display: flex;
+    flex-direction: column;
+    .cash-prize-section-list {
+      display: flex;
+      align-items: center;
+      background-color: $base-gray;
+      margin-bottom: 1rem;
+      padding: 0.2rem 1rem;
+      border-radius: 14px;
+
+      & > span {
+        padding: 1rem;
+      }
+
+      & > img {
+        width: 37px;
+        height: 35px;
+      }
+    }
+  }
+}

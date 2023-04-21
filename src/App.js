@@ -1,10 +1,8 @@
 import Header from "./Components/Header";
 import Seasons from "./Components/Seasons";
-import "./Styles/Mixins.scss";
+import "./App.scss";
 
 function App() {
-
-  
   return (
     <div className="landing-page">
       <div className="main-pop-container">
@@ -12,6 +10,9 @@ function App() {
         <section className="header-container"></section>
         <Header />
         <Seasons />
+        <div className="footer">
+          <div className="footer-text">ითამაშე</div>
+        </div>
       </div>
     </div>
   );
