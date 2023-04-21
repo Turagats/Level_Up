@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import Seasons from "./Components/Seasons";
+import Footer from "./Components/Footer";
 import "./App.scss";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
         <section className="header-container"></section>
         <Header />
         <Seasons />
-        <div className="footer">
-          <div className="footer-text">ითამაშე</div>
+        <Footer />
+        <div className="footer-end">
+          <div className="footer-end-text">ითამაშე</div>
         </div>
       </div>
     </div>

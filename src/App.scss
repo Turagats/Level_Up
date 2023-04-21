@@ -3,7 +3,7 @@
 .main-pop-container {
   background-color: $base-color;
   
-  .footer {
+  .footer-end {
     display: flex;
     justify-content: center;
     border-top: 3px solid $base-orange;
@@ -13,7 +13,7 @@
     bottom: 0;
     padding: 0.5rem;
 
-    .footer-text {
+    .footer-end-text {
       border-radius: 5px;
       background-color: $base-orange;
       color: $base-text;
