@@ -4,8 +4,48 @@ import infologo from "../../Assets/example-icon.png";
 import giftlogo from "../../Assets/gift.png";
 import planelogo from "../../Assets/travel-icon-sm.png";
 import ticketlogo from "../../Assets/ticket-icon-sm.png";
+import Footer from "../Footer";
 
 export default function CashComponent() {
+  const topTwentyLeaderboard = [
+    {
+      placement: 1,
+      voucher: "-",
+      image: planelogo,
+      prize: "A კატეგორიის საგზური",
+    },
+    {
+      placement: 2,
+      voucher: "-",
+      image: ticketlogo,
+      prize: "B კატეგორიის საგზური",
+    },
+    {
+      placement: 3,
+      voucher: "1 500 ₾",
+      image: "",
+      prize: "A კატეგორიის საგზური",
+    },
+    {
+      placement: 3,
+      voucher: "1 500 ₾",
+      image: "",
+      prize: "A კატეგორიის საგზური",
+    },
+    {
+      placement: 3,
+      voucher: "1 500 ₾",
+      image: "",
+      prize: "A კატეგორიის საგზური",
+    },
+    {
+      placement: 3,
+      voucher: "1 500 ₾",
+      image: "",
+      prize: "A კატეგორიის საგზური",
+    },
+  ];
+
   return (
     <section className="cash-main-container">
       <div className="cash-h3">
@@ -26,50 +66,18 @@ export default function CashComponent() {
             <span>პრიზი</span>
           </div>
           <ul className="cash-section-lists">
-            <li className="cash-section-list">
-              <div>1</div>
-              <span>-</span>
-              <div className="cash-list-logo">
-                <img alt="planelogo" src={planelogo} />
-                <span>A კატეგორიის საგზური</span>
-              </div>
-            </li>
-            <li className="cash-section-list">
-              <div>2</div>
-              <span>-</span>
-              <div className="cash-list-logo">
-                <img alt="ticketlogo" src={ticketlogo} />
-                <span>B კატეგორიის საგზური</span>
-              </div>
-            </li>
-            <li className="cash-section-list">
-              <div>3</div>
-              <span>1 500 ₾</span>
-              <div>
-                <span>სპეც. ტურნირის ბილეთი</span>
-              </div>
-            </li>
-            <li className="cash-section-list">
-              <div>4</div>
-              <span>1 500 ₾</span>
-              <div>
-                <span>სპეც. ტურნირის ბილეთი</span>
-              </div>
-            </li>
-            <li className="cash-section-list">
-              <div>5</div>
-              <span>1 500 ₾</span>
-              <div>
-                <span>სპეც. ტურნირის ბილეთი</span>
-              </div>
-            </li>
-            <li className="cash-section-list">
-              <div>6</div>
-              <span>1 500 ₾</span>
-              <div>
-                <span>სპეც. ტურნირის ბილეთი</span>
-              </div>
-            </li>
+            {topTwentyLeaderboard.map((item) => {
+              return (
+                <li className="cash-section-list" key={item.placement}>
+                  <div className="cash-placement">{item.placement}</div>
+                  <span>{item.voucher}</span>
+                  <div className="cash-list-logo">
+                    <img alt={""} src={item.image} />
+                    <span>{item.prize}</span>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
@@ -179,7 +187,12 @@ export default function CashComponent() {
           <span>ტექნიკის მაღაზიის ვაუჩერი</span>
         </div>
       </div>
-      <div className="cash-info-update">* ლიდერბორდის შედეგები განახლდება პოკერის ლობიში</div>
+      <div className="cash-info-update">
+        * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში
+      </div>
+      <div style={{ width: "100%" }}>
+        <Footer />
+      </div>
     </section>
   );
 }

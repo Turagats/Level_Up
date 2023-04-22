@@ -1,5 +1,10 @@
 import React from "react";
+import Footer from "../../Components/Footer";
 
 export default function FinalStageComponent() {
-  return <div>FinalStageComponent</div>;
+  return (
+    <div>
+      <Footer />
+    </div>
+  );
 }

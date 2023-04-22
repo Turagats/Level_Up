@@ -40,22 +40,28 @@
     .footer-section-title {
       color: white;
       font-size: 18px;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
     }
 
     .footer-image-section {
-      display: flex;
+      height: 200px;
+      overflow-x: scroll;
 
-      & > img {
-        cursor: pointer;
-        border-radius: 5px;
-        overflow: hidden;
-        overflow: scroll;
-        display: inline-block;
-        max-width: 310px;
-        max-height: 360px;
-        position: relative;
+      .footer-image-container {
+        display: flex;
+        & > img {
+          border-radius: 5px;
+          width: 155px;
+          height: 180px;
+          margin-right: 10px;
+        }
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 8px;
+  height: 8px;
 }

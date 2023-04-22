@@ -9,7 +9,6 @@ export default function Header() {
       <div className="background-image">
         <img alt="background_image" src={banner} />
       </div>
-
       <div className="dates-and-gifts-container">
         <div className="header-dates">
           <div className="header-dates-slots">სლოტები</div>

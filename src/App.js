@@ -11,7 +11,7 @@ function App() {
         <section className="header-container"></section>
         <Header />
         <Seasons />
-        <Footer />
+        {/* <Footer /> */}
         <div className="footer-end">
           <div className="footer-end-text">ითამაშე</div>
         </div>

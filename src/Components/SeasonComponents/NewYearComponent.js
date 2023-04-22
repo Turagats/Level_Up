@@ -1,5 +1,10 @@
 import React from "react";
+import Footer from "../../Components/Footer";
 
 export default function NewYearComponent() {
-  return <div>NewYearComponent</div>;
+  return (
+    <div>
+      <Footer />
+    </div>
+  );
 }
