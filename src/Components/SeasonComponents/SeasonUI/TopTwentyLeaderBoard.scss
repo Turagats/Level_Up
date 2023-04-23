@@ -1,6 +1,14 @@
+@import "../../../Styles/Mixins.scss";
+
 .top-twenty-container {
+  background-color: $base-gray-2;
+  border-radius: 16px;
+
   .cash-h3 {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
+    background-color: $base-gray;
+    border-radius: 16px;
   }
 }

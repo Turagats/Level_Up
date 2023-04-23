@@ -10,8 +10,6 @@
 
   .seasons {
     display: flex;
-    // padding: 2rem 4rem;
-
     .cash-left {
       border-radius: 8px 0 0 8px;
     }
@@ -19,8 +17,13 @@
     .final-right {
       border-radius: 0 8px 8px 0;
     }
+    .season-choose:hover .choosen-season:hover,
+    .season-choose:hover {
+      cursor: pointer;
+    }
 
     .choosen-season {
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       border-radius: 8px;
@@ -30,7 +33,7 @@
 
       flex: 32;
       transform: scale(1.2);
-      @include breakpoint(sm){
+      @include breakpoint(sm) {
         transform: scale(1.05);
       }
 

@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import LeaderAndPrizes from "../SeasonComponents/SeasonUI/LeaderAndPrizes";
+import Tournaments from "./SeasonUI/Tournaments";
 import giftlogo from "../../Assets/gift.png";
 import planelogo from "../../Assets/travel-icon-sm.png";
 import ticketlogo from "../../Assets/ticket-icon-sm.png";
 import circlelogo from "../../Assets/mechanic-icon.png";
 import "./NewYearComponent.scss";
-import Tournaments from "./SeasonUI/Tournaments";
 
 export default function NewYearComponent() {
   const topTwentyLeaderboard = [

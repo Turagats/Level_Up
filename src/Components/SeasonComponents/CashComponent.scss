@@ -1,7 +1,6 @@
 @import "../../Styles/Mixins.scss";
 
 .cash-main-container {
-  // @include center-content();
   flex-direction: column;
   border-radius: 16px;
   color: aliceblue;
@@ -13,98 +12,13 @@
     .cash-section-leaderboard-header-title {
       display: flex;
       justify-content: center;
-      // margin-bottom: 1rem;
-    }
-    .cash-section-leaderboard {
-      display: flex;
-      flex-direction: column;
-
-      .cash-section-leaderboard-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1rem;
-
-        .cash-section-gift {
-          display: flex;
-          align-items: center;
-        }
-      }
-
-      .cash-section-lists {
-        display: flex;
-        flex-direction: column;
-        // padding: 1rem;
-        background-color: $base-gray-2;
-
-        .cash-section-list {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: $base-gray-3;
-          border-radius: 76px;
-          border: 2px solid $base-gray;
-          margin: 0.2rem;
-          font-size: 10px;
-          font-weight: bold;
-          max-height: 45px;
-          // margin: 1rem;
-          .cash-list-logo {
-            margin-right: 1rem;
-          }
-          .cash-placement {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $base-gray;
-            border-radius: 50%;
-            margin: 1rem;
-            width: 2rem;
-            height: 2rem;
-          }
-
-          .cash-list-logo {
-            display: flex;
-            align-items: center;
-
-            & > img {
-              display: none;
-              @include breakpoint(sm) {
-                display: flex;
-              }
-            }
-          }
-        }
-      }
+      margin-top: 1rem;
     }
   }
+}
 
-  .cash-prize-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    .cash-prize-section-list {
-      display: flex;
-      align-items: center;
-      background-color: $base-gray;
-      margin-bottom: 1rem;
-      padding: 0.2rem 1rem;
-      border-radius: 14px;
-
-      & > span {
-        padding: 1rem;
-      }
-
-      & > img {
-        width: 37px;
-        height: 35px;
-      }
-    }
-  }
-  .cash-info-update {
-    text-align: center;
-    font-size: $base-font-size-xs;
-    padding-bottom: 3rem;
-  }
+.cash-info-update {
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: $base-font-size-xxs;
 }
