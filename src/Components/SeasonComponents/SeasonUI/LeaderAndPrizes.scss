@@ -1,0 +1,107 @@
+@import "../../../Styles/Mixins.scss";
+
+.leader-and-prizes {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  width: 100%;
+  border-radius: 12px;
+  background-color: $base-gray-2;
+  // margin-bottom: 1rem
+  .cash-section-leaderboard {
+    // color: white;
+    width: 100%;
+    border-radius: 12px;
+    .cash-section-leaderboard-title {
+      font-size: $base-font-size-xxs;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      .cash-section-gift {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .cash-section-lists {
+      display: flex;
+      flex-direction: column;
+      padding: 0rem 1rem;
+      background-color: $base-gray-2;
+
+      .cash-section-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $base-gray-3;
+        border-radius: 76px;
+        border: 2px solid $base-gray;
+        margin: 0.2rem;
+        font-size: 10px;
+        font-weight: bold;
+        max-height: 45px;
+        .cash-list-logo {
+          margin-right: 1rem;
+        }
+        .cash-placement {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $base-gray;
+          border-radius: 50%;
+          margin: 1rem;
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .cash-list-logo {
+          display: flex;
+          align-items: center;
+
+          & > img {
+            display: none;
+            @include breakpoint(sm) {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cash-prize-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .cash-prize-section-list {
+      display: flex;
+      align-items: center;
+      background-color: $base-gray;
+      margin-bottom: 1rem;
+      padding: 0.2rem 1rem;
+      border-radius: 14px;
+      position: relative;
+      .border-line {
+        background-color: $base-orange;
+        border-radius: 0 5px 5px 0px;
+        filter: blur(1px);
+        min-height: 60%;
+        width: 3px;
+        position: absolute;
+        top: 20%;
+        left: 0;
+      }
+
+      & > span {
+        padding: 1rem;
+      }
+
+      & > img {
+        width: 37px;
+        height: 35px;
+      }
+    }
+  }
+  .cash-info-update {
+    padding-bottom: 3rem;
+  }
+}

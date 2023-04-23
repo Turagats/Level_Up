@@ -3,8 +3,8 @@ import Footer from "../../Components/Footer";
 
 export default function FinalStageComponent() {
   return (
-    <div>
+    <section className="final-stage-main-container">
       <Footer />
-    </div>
+    </section>
   );
 }

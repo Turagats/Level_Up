@@ -1,0 +1,35 @@
+@import "../../../Styles/Mixins.scss";
+
+.tournaments-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $base-gray;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+
+  .tournaments-orange-line {
+    background-color: $base-orange;
+    border-radius: 0 0 5px 5px;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: blur(1px);
+    min-width: 30%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 35%;
+
+    @include breakpoint(sm) {
+      min-width: 300px;
+    }
+  }
+  .tournaments-big-text {
+    font-size: $base-font-size-m;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .tournaments-small-text {
+    font-size: $base-font-size-s;
+  }
+}
