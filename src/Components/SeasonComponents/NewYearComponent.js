@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import LeaderAndPrizes from "../SeasonComponents/SeasonUI/LeaderAndPrizes";
+import SideComponent from "./SeasonUI/SideComponent";
 import Tournaments from "./SeasonUI/Tournaments";
 import giftlogo from "../../Assets/gift.png";
 import planelogo from "../../Assets/travel-icon-sm.png";
@@ -63,6 +64,7 @@ export default function NewYearComponent() {
   ];
   return (
     <section className="new-year-main-container">
+      <Tournaments />
       <div className="leaderboard-container">
         <div className="leaderboard-container-header">
           მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
@@ -83,7 +85,7 @@ export default function NewYearComponent() {
         * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში <br />* სატურნირო
         ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და სატელიტები
       </div>
-      <Tournaments />
+      <SideComponent />
       <Footer />
     </section>
   );

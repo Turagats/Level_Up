@@ -1,0 +1,84 @@
+@import "../../../Styles/Mixins.scss";
+
+.tournaments-main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $base-gray;
+  margin-top: 1rem;
+  border-radius: 16px;
+  .tournament-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+
+    .border-line-orange {
+      background-color: $base-orange;
+      border-radius: 0 0 5px 5px;
+      filter: blur(1px);
+      min-width: 30%;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      left: 35%;
+    }
+  }
+  .tournament-image-background {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 0 0 16px 16px;
+    border-color: $base-orange;
+    // padding: 2rem;
+    text-align: center;
+
+    .tournaments-images {
+      display: flex;
+      justify-content: space-between;
+
+      .tournament-mobile-left-image {
+        @include breakpoint(sm) {
+          display: none;
+        }
+      }
+
+      .tournament-mobile-right-image {
+        height: 100%;
+        @include breakpoint(sm) {
+          display: none;
+        }
+      }
+      .tournament-left-image {
+        display: none;
+        @include breakpoint(sm) {
+          display: block;
+        }
+      }
+      .tournament-right-image {
+        display: none;
+        @include breakpoint(sm) {
+          display: block;
+        }
+      }
+    }
+  }
+  .tournaments-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .tournaments-footer-text {
+      font-size: $base-font-size-s;
+    }
+
+    .tournament-button {
+      background-color: $base-orange;
+      padding: 0.2rem 1rem;
+      border-radius: 5px;
+      margin: 1rem;
+    }
+  }
+}

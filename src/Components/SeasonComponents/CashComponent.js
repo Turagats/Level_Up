@@ -3,7 +3,7 @@ import "./CashComponent.scss";
 import infologo from "../../Assets/example-icon.png";
 import Footer from "../Footer";
 import TopTwentyLeaderBoard from "./SeasonUI/TopTwentyLeaderBoard";
-import Tournaments from "./SeasonUI/Tournaments";
+import SideComponent from "./SeasonUI/SideComponent";
 
 export default function CashComponent() {
   return (
@@ -13,7 +13,7 @@ export default function CashComponent() {
       <div className="cash-info-update">
         * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში
       </div>
-      <Tournaments />
+      <SideComponent />
       <Footer />
     </section>
   );
