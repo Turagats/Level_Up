@@ -65,6 +65,13 @@
           .cash-list-logo {
             display: flex;
             align-items: center;
+
+            & > img {
+              display: none;
+              @include breakpoint(sm) {
+                display: flex;
+              }
+            }
           }
         }
       }

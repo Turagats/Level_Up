@@ -28,22 +28,36 @@ export default function CashComponent() {
       prize: "A კატეგორიის საგზური",
     },
     {
-      placement: 3,
+      placement: 4,
       voucher: "1 500 ₾",
       image: "",
       prize: "A კატეგორიის საგზური",
     },
     {
-      placement: 3,
+      placement: 5,
       voucher: "1 500 ₾",
       image: "",
       prize: "A კატეგორიის საგზური",
     },
     {
-      placement: 3,
+      placement: 6,
       voucher: "1 500 ₾",
       image: "",
       prize: "A კატეგორიის საგზური",
+    },
+  ];
+
+  const TopTwentyPrizes = [
+    { place: 1, logo: planelogo, text: "The Festival in Malta-ს საგზური" },
+    {
+      place: 2,
+      logo: ticketlogo,
+      text: "სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური",
+    },
+    {
+      place: 3,
+      logo: giftlogo,
+      text: "ტექნიკის მაღაზიის ვაუჩერი",
     },
   ];
 
@@ -53,11 +67,17 @@ export default function CashComponent() {
         info={infologo}
         gift={giftlogo}
         board={topTwentyLeaderboard}
+        plane={planelogo}
+        ticket={ticketlogo}
+        prizes={TopTwentyPrizes}
       />
       <TopTwentyLeaderBoard
         info={infologo}
         gift={giftlogo}
         board={topTwentyLeaderboard}
+        plane={planelogo}
+        ticket={ticketlogo}
+        prizes={TopTwentyPrizes}
       />
 
       <div className="cash-info-update">

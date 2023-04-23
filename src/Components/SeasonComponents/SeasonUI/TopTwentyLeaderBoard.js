@@ -37,6 +37,17 @@ export default function TopTwentyLeaderBoard(props) {
           </ul>
         </div>
       </div>
+      <div className="cash-prize-section">
+        {props.prizes.map((item) => {
+          return (
+            <div className="cash-prize-section-list" key={item.place}>
+              <div className="border-line" key={item.place}></div>
+              <img alt={""} src={item.logo} />
+              <span>{item.text}</span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
