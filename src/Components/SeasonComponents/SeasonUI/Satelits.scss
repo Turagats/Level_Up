@@ -1,0 +1,53 @@
+@import "../../../Styles/Mixins.scss";
+.satelits-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: center;
+
+  @include breakpoint(md) {
+    border: 3px solid $base-gray;
+    border-radius: 16px;
+  }
+  .satelits-header {
+    font-size: $base-font-size-m;
+    font-weight: bold;
+  }
+  .satelits-banner-container {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
+    grid-gap: 20px;
+    color: white;
+    justify-items: center;
+    // justify-content: center;
+
+    .satelits-desktop-banners {
+      display: none;
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
+    .satelits-mobile-banners {
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+
+    @include breakpoint(md) {
+      //   grid-template-columns: repeat(3, 1fr);
+      .satelits-banners:nth-child(3) {
+        grid-column: 1 / span 3;
+        justify-items: center;
+      }
+    }
+
+    .satelits-footer {
+      text-align: center;
+      font-size: $base-font-size-xxs;
+    }
+  }
+}

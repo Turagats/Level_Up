@@ -8,6 +8,7 @@ import planelogo from "../../Assets/travel-icon-sm.png";
 import ticketlogo from "../../Assets/ticket-icon-sm.png";
 import circlelogo from "../../Assets/mechanic-icon.png";
 import "./NewYearComponent.scss";
+import Satelits from "./SeasonUI/Satelits";
 
 export default function NewYearComponent() {
   const topTwentyLeaderboard = [
@@ -80,11 +81,12 @@ export default function NewYearComponent() {
           prizes={topTwentyPrizes}
           gift={giftlogo}
         />
+        <div className="cash-info-update">
+          * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში <br />* სატურნირო
+          ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და სატელიტები
+        </div>
       </div>
-      <div className="cash-info-update">
-        * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში <br />* სატურნირო
-        ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და სატელიტები
-      </div>
+      <Satelits />
       <SideComponent />
       <Footer />
     </section>
