@@ -8,18 +8,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $base-gray-2;
+    background-color: $base-gray-3;
     border-radius: 16px;
     margin-top: 2rem;
     .leaderboard-container-header {
-      width: 100%;
       text-align: center;
       font-size: $base-font-size-m;
       border-radius: 16px;
       background-color: $base-gray-3;
       font-weight: bold;
-      padding: 2rem 0rem;
+      padding: 2rem 1rem;
       margin-bottom: 1rem;
+      background-color: $base-gray;
+      @include breakpoint(sm) {
+        width: 100%;
+        padding: 2rem 0rem;
+      }
     }
     .leaderboard-container-mini-header {
       font-weight: bold;
@@ -29,11 +33,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: $base-gray-3;
+      background-color: $base-gray-2;
       border-radius: 76px;
       border: 2px solid $base-gray;
       font-weight: bold;
       max-height: 45px;
+      margin-bottom: 1rem;
 
       & > span {
         margin-left: 1rem;

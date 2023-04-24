@@ -3,22 +3,50 @@
 .cash-main-container {
   flex-direction: column;
   border-radius: 16px;
-  color: aliceblue;
-  .cash-section-leaderboard-container {
-    width: 100%;
-    border-radius: 12px;
-    background-color: $base-gray-2;
-    margin-bottom: 1rem;
-    .cash-section-leaderboard-header-title {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
+
+  .cash-h3 {
+    background-color: aliceblue;
+    background-color: $base-gray-3;
+
+    @include breakpoint(md) {
+      background-color: $base-color-black;
+      border: 3px solid $base-gray-3;
+      padding: 1rem;
     }
+    .cash-h3-header {
+      font-size: $base-font-size-m;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 16px;
+      color: aliceblue;
+      background-color: $base-gray;
+      padding: 2rem;
+      z-index: 100;
+      @include breakpoint(md) {
+        border-radius: 12px 12px 0 0;
+        margin: -1rem;
+        // padding: 4rem;
+        // position: absolute;
+      }
+    }
+    margin-top: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .cash-info-update {
+  background-color: $base-gray-3;
+  color: aliceblue;
+  border-radius: 0 0 16px 16px;
   padding-bottom: 3rem;
   text-align: center;
   font-size: $base-font-size-xxs;
+
+  @include breakpoint(md) {
+    background-color: transparent;
+    margin-top: 1rem;
+  }
 }

@@ -5,9 +5,11 @@
   flex-direction: column;
   text-align: center;
   background-color: $base-gray;
+  color: aliceblue;
   border-radius: 16px;
   padding: 2rem;
   position: relative;
+  margin-top: 1rem;
 
   .tournaments-orange-line {
     background-color: $base-orange;

@@ -33,13 +33,13 @@ export default function Tournaments() {
             <img alt="" src={rightpromo} />
           </div>
         </div>
-      </div>
-      <div className="tournaments-footer">
-        <div className="tournaments-footer-text">
-          * ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან. <br />
-          ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+        <div className="tournaments-footer">
+          <div className="tournaments-footer-text">
+            * ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან. <br />
+            ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+          </div>
+          <div className="tournament-button">პოკერის ლობი</div>
         </div>
-        <div className="tournament-button">პოკერის ლობი</div>
       </div>
     </div>
   );

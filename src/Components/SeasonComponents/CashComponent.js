@@ -8,10 +8,13 @@ import SideComponent from "./SeasonUI/SideComponent";
 export default function CashComponent() {
   return (
     <section className="cash-main-container">
-      <TopTwentyLeaderBoard info={infologo} />
-      <TopTwentyLeaderBoard info={infologo} />
-      <div className="cash-info-update">
-        * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში
+      <div className="cash-h3">
+        <div className="cash-h3-header">1₾ რეიქი = 1 ქულას</div>
+        <TopTwentyLeaderBoard info={infologo} />
+        <TopTwentyLeaderBoard info={infologo} />
+        <div className="cash-info-update">
+          * ლიდერბორდის შედეგები განახლდება პოკერის ლობიში
+        </div>
       </div>
       <SideComponent />
       <Footer />

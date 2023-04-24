@@ -1,23 +1,54 @@
 @import "./Styles/Mixins.scss";
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  // margin: 0;
+  backdrop-filter: blur(10px);
 
-.main-pop-container {
-  background-color: $base-color;
-
-  .footer-end {
+  .main {
     display: flex;
+    // flex-direction: column;
     justify-content: center;
-    border-top: 3px solid $base-orange;
-    background-color: $base-color;
-    position: fixed;
+    align-items: center;
     width: 100%;
-    bottom: 0;
-    padding: 0.5rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+  }
+  .main-pop-container {
+    background-color: $base-color;
+    max-height: 100%;
+    overflow: scroll;
+    max-width: 100%;
+    display: inline-block;
+    position: fixed;
+    @include breakpoint(md) {
+      max-height: 95%;
+      max-width: 940px;
+      border-radius: 16px;
+    }
 
-    .footer-end-text {
-      border-radius: 5px;
-      background-color: $base-orange;
-      color: $base-text;
-      padding: 0.2rem 0.5rem;
+    .footer-end {
+      display: flex;
+      justify-content: center;
+      border-top: 3px solid $base-orange;
+      background-color: $base-color;
+      position: sticky;
+      width: 100%;
+      bottom: 0;
+      padding: 0.5rem;
+      @include breakpoint(md) {
+        max-width: 940px;
+      }
+
+      .footer-end-text {
+        border-radius: 5px;
+        background-color: $base-orange;
+        color: $base-text;
+        padding: 0.2rem 0.5rem;
+      }
     }
   }
 }

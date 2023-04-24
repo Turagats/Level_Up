@@ -60,9 +60,6 @@ export default function TopTwentyLeaderBoard(props) {
   ];
   return (
     <div className="top-twenty-container">
-      <div className="cash-h3">
-        <h3>1₾ რეიქი = 1 ქულას</h3>
-      </div>
       <div className="cash-section-leaderboard-container">
         <div className="cash-section-leaderboard-header-title">
           <span>TOP20 ლიდერ ბორდი ჰოლდემში</span>
