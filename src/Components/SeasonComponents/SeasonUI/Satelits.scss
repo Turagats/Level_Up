@@ -23,12 +23,17 @@
     grid-gap: 20px;
     color: white;
     justify-items: center;
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
     // justify-content: center;
 
     .satelits-desktop-banners {
       display: none;
       @include breakpoint(md) {
         display: block;
+        width: 100%;
       }
     }
     .satelits-mobile-banners {
@@ -40,7 +45,8 @@
     @include breakpoint(md) {
       //   grid-template-columns: repeat(3, 1fr);
       .satelits-banners:nth-child(3) {
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 2;
+        grid-row: 2;
         justify-items: center;
       }
     }
