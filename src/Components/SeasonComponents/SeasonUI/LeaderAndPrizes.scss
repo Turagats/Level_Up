@@ -5,13 +5,10 @@
   flex-direction: column;
   color: aliceblue;
   width: 100%;
-  // border-radius: 12px;
   background-color: $base-gray-3;
   @include breakpoint(md) {
     border-radius: 16px;
     background-color: transparent;
-
-    // background-color: aliceblue;
   }
 
   .cash-section-leaderboard {
@@ -86,11 +83,9 @@
 
     @include breakpoint(md) {
       border-radius: 16px;
-      // background-color: aliceblue;
       background-color: $base-gray-3;
     }
 
-    // width: 100%;
     .cash-prize-section-list {
       display: flex;
       align-items: center;

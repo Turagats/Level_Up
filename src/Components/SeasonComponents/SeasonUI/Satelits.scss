@@ -19,7 +19,6 @@
   }
   .satelits-banner-container {
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1fr));
     grid-gap: 20px;
     color: white;
     justify-items: center;
@@ -27,7 +26,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
     }
-    // justify-content: center;
 
     .satelits-desktop-banners {
       display: none;
@@ -43,7 +41,6 @@
     }
 
     @include breakpoint(md) {
-      //   grid-template-columns: repeat(3, 1fr);
       .satelits-banners:nth-child(3) {
         grid-column: 1 / span 2;
         grid-row: 2;

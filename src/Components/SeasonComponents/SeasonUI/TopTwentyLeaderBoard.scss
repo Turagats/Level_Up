@@ -2,7 +2,6 @@
 
 .top-twenty-container {
   background-color: $base-gray-3;
-  // border-radius: 16px;
   padding-top: 2rem;
   @include breakpoint(md) {
     background-color: $base-color-black;
@@ -15,10 +14,8 @@
     @include breakpoint(md) {
       border-radius: 16px;
       background-color: $base-color-black;
-      // background-color: aqua;
     }
 
-    // margin-bottom: 1rem;
     .cash-section-leaderboard-header-title {
       font-size: $base-font-size-s;
       font-weight: bold;
