@@ -1,7 +1,5 @@
 @import "../../../../Styles/Mixins.scss";
 
-@import "../../../../Styles/Mixins.scss";
-
 .mistic-main {
   display: flex;
   flex-direction: column;
@@ -9,13 +7,81 @@
   align-items: center;
   color: aliceblue;
   background-color: $base-gray-3;
-  margin: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+
+  @include breakpoint(md) {
+    border: 3px solid $base-gray;
+    background-color: $base-desktop-color;
+  }
 
   .mistic-main-header {
+    font-size: $base-font-size-m;
+    font-weight: bold;
     width: 100%;
     background-color: $base-gray;
-    padding: 1rem;
+    padding: 1rem 0;
     border-radius: 8px;
     text-align: center;
+    @include breakpoint(md) {
+      border-radius: 5px 5px 0 0;
+    }
+  }
+  .mistic-main-mini-header {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+      max-width: 90%;
+      font-size: $base-font-size-s;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.mistic-section-lists {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  background-color: $base-gray-3;
+  gap: 0.2rem;
+  max-height: 420px;
+  overflow: scroll;
+  @include breakpoint(md) {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 16px;
+    max-height: 420px;
+  }
+
+  .mistic-section-list {
+    display: flex;
+    align-items: center;
+    background-color: $base-gray-2;
+    border-radius: 76px;
+    border: 2px solid $base-gray;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 10px;
+    font-weight: bold;
+    max-height: 45px;
+
+    .mistic-list-text {
+      // margin-right: 1rem;
+      max-width: 70%;
+      @include breakpoint(md) {
+        font-size: $base-font-size-s;
+        font-weight: 400;
+      }
+    }
+    .mistic-placement {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $base-gray;
+      border-radius: 50%;
+      // margin: 1rem;
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }
