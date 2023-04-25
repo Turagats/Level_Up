@@ -5,10 +5,7 @@ import background from "./Assets/backgroun-europebet.jpeg";
 
 function App() {
   return (
-    <div
-      className="landing-page"
-      style={{ backgroundImage: `url(${background})` }}
-    >
+    <div className="landing-page">
       <div className="main">
         <div className="main-pop-container">
           <Header />
