@@ -38,7 +38,7 @@
       position: sticky;
       width: 100%;
       bottom: 0;
-      padding: 0.5rem;
+      padding: 0.5rem 0;
       @include breakpoint(md) {
         max-width: 940px;
       }
