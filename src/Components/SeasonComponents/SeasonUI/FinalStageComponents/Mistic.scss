@@ -1,0 +1,21 @@
+@import "../../../../Styles/Mixins.scss";
+
+@import "../../../../Styles/Mixins.scss";
+
+.mistic-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: $base-gray-3;
+  margin: 1rem;
+
+  .mistic-main-header {
+    width: 100%;
+    background-color: $base-gray;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+}

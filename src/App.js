@@ -1,7 +1,6 @@
 import Header from "./Components/Header";
 import Seasons from "./Components/Seasons";
 import "./App.scss";
-import background from "./Assets/backgroun-europebet.jpeg";
 
 function App() {
   return (

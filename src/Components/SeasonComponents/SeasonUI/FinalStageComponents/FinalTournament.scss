@@ -1,0 +1,105 @@
+@import "../../../../Styles/Mixins.scss";
+
+.final-tournament-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: $base-gray-3;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+
+  @include breakpoint(md) {
+    // border-radius: 12px 12px 0 0;
+    border: 3px solid $base-gray;
+    background-color: $base-desktop-color;
+  }
+
+  .final-tournament-main-header {
+    font-size: $base-font-size-m;
+    font-weight: bold;
+    width: 100%;
+    background-color: $base-gray;
+    padding: 1rem 0;
+    border-radius: 8px;
+    text-align: center;
+    @include breakpoint(md) {
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  .final-tournament-flex-container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+    .final-tournament-flex-3 {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+      justify-content: space-between;
+      padding-bottom: 0;
+
+      @include breakpoint(md) {
+        width: 50%;
+      }
+    }
+    .final-tournament-flex-2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      gap: 1rem;
+      padding-bottom: 0;
+
+      @include breakpoint(md) {
+        width: 50%;
+      }
+      & > div {
+        height: 50%;
+      }
+    }
+    .final-tournament-item {
+      background-color: $base-gray-2;
+      text-align: start;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+
+      .final-tournament-item-header {
+        padding: 1rem 1rem 0 1rem;
+        font-weight: bold;
+      }
+      .final-tournament-item-text {
+        padding: 0 1rem 1rem 1rem;
+        font-size: $base-font-size-xs;
+      }
+
+      & > img {
+        position: absolute;
+        top: 0;
+        right: 5%;
+      }
+    }
+  }
+
+  .final-tournament-main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    // margin: 3rem;
+    // width: 100%;
+    font-size: $base-font-size-xxs;
+    @include breakpoint(md) {
+      // max-width: 70%;
+    }
+  }
+}
