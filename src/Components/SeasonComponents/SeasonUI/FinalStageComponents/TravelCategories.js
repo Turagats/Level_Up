@@ -4,7 +4,10 @@ import "./TravelCategories.scss";
 export default function TravelCategories(props) {
   return (
     <div className="categories-main-container">
-      <div className="categories-lists-header">{props.headers}</div>
+      <div className="categories-lists-header">
+        <div className="border-line-orange"></div>
+        {props.headers}
+      </div>
       <ul className="categories-lists">
         {props.categories.map((item) => {
           return (

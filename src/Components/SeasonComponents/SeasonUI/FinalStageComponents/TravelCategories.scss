@@ -12,6 +12,17 @@
     background-color: $base-gray;
     padding: 1rem;
     border-radius: 8px 8px 0 0;
+    position: relative;
+    .border-line-orange {
+      background-color: $base-orange;
+      border-radius: 0 0 5px 5px;
+      filter: blur(1px);
+      min-width: 30%;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      left: 35%;
+    }
   }
 
   .categories-lists {

@@ -29,6 +29,7 @@ export default function FinalTournament() {
   return (
     <div className="final-tournament-main">
       <div className="final-tournament-main-header">
+        <div className="border-line-orange"></div>
         მოიგე საგზური 30 აპრილის ტურნირებზე
       </div>
       <div class="final-tournament-flex-container">

@@ -55,7 +55,9 @@ const MISTIC_LIST = [
 export default function Mistic() {
   return (
     <div className="mistic-main">
-      <div className="mistic-main-header">მისტიური გასაღები</div>
+      <div className="mistic-main-header">
+        <div className="border-line-orange"></div>მისტიური გასაღები
+      </div>
       <div className="mistic-main-mini-header">
         მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
         საიდუმლო გასაღებს

@@ -22,6 +22,17 @@
       background-color: $base-gray;
       padding: 2rem;
       z-index: 100;
+      position: relative;
+      .border-line-orange {
+        background-color: $base-orange;
+        border-radius: 0 0 5px 5px;
+        filter: blur(1px);
+        min-width: 30%;
+        height: 3px;
+        position: absolute;
+        top: 0;
+        left: 35%;
+      }
       @include breakpoint(md) {
         border-radius: 12px 12px 0 0;
         margin: -1rem;

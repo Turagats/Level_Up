@@ -9,7 +9,10 @@ export default function CashComponent() {
   return (
     <section className="cash-main-container">
       <div className="cash-h3">
-        <div className="cash-h3-header">1₾ რეიქი = 1 ქულას</div>
+        <div className="cash-h3-header">
+          <div className="border-line-orange"></div>
+          1₾ რეიქი = 1 ქულას
+        </div>
         <TopTwentyLeaderBoard info={infologo} />
         <TopTwentyLeaderBoard info={infologo} />
         <div className="cash-info-update">

@@ -68,6 +68,7 @@ export default function NewYearComponent() {
       <Tournaments />
       <div className="leaderboard-container">
         <div className="leaderboard-container-header">
+          <div className="border-line-orange"></div>
           მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
         </div>
         <div className="leaderboard-container-mini-header">
