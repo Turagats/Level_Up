@@ -77,6 +77,7 @@ export default function Festival() {
         მოთამაშეებს დაუვიწყარი მოგზაურობის შანსს.
       </div>
       <div className="festival-dates">
+        <div className="border-line"></div>
         15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს
       </div>
       <div className="festival-travel-categories-container">

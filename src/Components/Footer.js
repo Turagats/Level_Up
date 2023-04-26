@@ -42,19 +42,15 @@ export default function Footer() {
                   }}
                 />
               </div>
-              {term.showDetails && (
-                <div
-                  className="footer-TC-list-description"
-                  id="footer-TC-list-description"
-                  style={{
-                    color: "aliceblue",
-                    opacity: "0.7",
-                    transition: term.showDetails && "opacity 0.8s ease-in-out",
-                  }}
-                >
-                  {term.details}
-                </div>
-              )}
+              <div
+                className={
+                  term.showDetails
+                    ? "footer-TC-list-description open"
+                    : "footer-TC-list-description"
+                }
+              >
+                {term.details}
+              </div>
             </div>
           ))}
         </div>

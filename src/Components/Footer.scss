@@ -28,18 +28,23 @@
         margin-bottom: 0.3rem;
         border-radius: 8px;
         font-size: 15px;
-        .footer-TC-list-description {
-          color: aqua;
-        }
         & > img {
           background-color: $base-gray-3;
           height: 10px;
         }
+      }
+      .footer-TC-list-description {
+        display: none;
+        position: relative;
+        color: aliceblue;
+        opacity: 0;
+        transition: all 5s ease;
+      }
+      .open {
+        display: block;
+        opacity: 0.7;
 
-        & > div {
-          background-color: wheat;
-          color: white;
-        }
+        // transform: translateY(200px);
       }
     }
   }

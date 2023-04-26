@@ -2,7 +2,7 @@ let tccomponent = [
   {
     title: "როდის იწყება და რა ფორმატით გაიმართება აქცია",
     details: (
-      <ul class="tc-ul font-hl-roman">
+      <ul className="tc-ul font-hl-roman">
         <li>აქცია იწყება 21 სექტემბერს 12:00 საათზე.</li>
         <li>
           {" "}
@@ -104,7 +104,7 @@ let tccomponent = [
   {
     title: "როგორ მივიღო აქციაში მონაწილეობა?",
     details: (
-      <ul class="tc-ul font-hl-roman">
+      <ul className="tc-ul font-hl-roman">
         <li>
           თითოეულ ეტაპზე მოთამაშე დაატრიალებს ეტაპის შესაბამისი დონის ბორბალს.
           ყოველი მომდევნო დატრიალების გამოყენებისას, საწყის ბორბალს მოაკლდება
@@ -205,7 +205,7 @@ let tccomponent = [
   {
     title: "სხვადასვა",
     details: (
-      <ul class="tc-ul font-hl-roman">
+      <ul className="tc-ul font-hl-roman">
         <li>
           ნებისმიერი სახის არასამართლიანი თამაში დაისჯება ევროპაბეთის წესების
           შესაბამისად და ასეთ ქმედებაში შემჩნეული მოთამაშე, კომპანიის

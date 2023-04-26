@@ -48,6 +48,7 @@ export default function FinalTournament() {
                 </div>
               );
             }
+            return null;
           })}
         </div>
         <div className="final-tournament-flex-2">
@@ -65,6 +66,7 @@ export default function FinalTournament() {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
