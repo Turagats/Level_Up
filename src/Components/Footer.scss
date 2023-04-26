@@ -21,12 +21,25 @@
       .footer-TC-list {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         background-color: $base-gray-3;
         color: $base-text-tc;
         padding: 1rem;
         margin-bottom: 0.3rem;
         border-radius: 8px;
         font-size: 15px;
+        .footer-TC-list-description {
+          color: aqua;
+        }
+        & > img {
+          background-color: $base-gray-3;
+          height: 10px;
+        }
+
+        & > div {
+          background-color: wheat;
+          color: white;
+        }
       }
     }
   }
