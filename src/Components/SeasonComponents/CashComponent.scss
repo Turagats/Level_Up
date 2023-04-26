@@ -25,13 +25,13 @@
       position: relative;
       .border-line-orange {
         background-color: $base-orange;
-        border-radius: 0 0 5px 5px;
-        filter: blur(1px);
-        min-width: 30%;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px $base-orange;
+        min-width: 45%;
         height: 3px;
         position: absolute;
         top: 0;
-        left: 35%;
+        left: 27%;
       }
       @include breakpoint(md) {
         border-radius: 12px 12px 0 0;
