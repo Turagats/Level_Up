@@ -1,4 +1,5 @@
 let tccomponent = [
+  // It is just copy from europebet.com . It is better do to nested objects.
   {
     title: "როდის იწყება და რა ფორმატით გაიმართება აქცია",
     details: (
